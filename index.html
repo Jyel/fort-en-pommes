@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Créé par Jyel (twitter.com/Jyel) parce qu'on est fort en pommes -->
+<html>
+<head>
+	<title>Fort en pommes ?!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		var clique = 0
+		
+		window.onload = function() {
+			document.getElementById("leo").play();
+		}
+		
+		function PlaySound(audio) {
+			var path = "media/audio/"
+			var randnum = Math.floor(Math.random() * 2) + 1
+			var son = new Audio(path + audio + randnum + ".mp3");
+			son.play();
+			clique = clique + 1;
+			document.title = "Fort en pommes ?! (×" + clique + ")";
+		}
+	</script>
+</head>
+
+<body>
+	<audio id="leo" src="media/audio/start.mp3"></audio>
+	<div class="container">
+		<button id="sven" class="button" onclick="PlaySound('sven')"></button>
+		<button id="burgonde" class="button" onclick="PlaySound('burgonde')"></button>
+	</div>
+	<a class="credits" href="http://twitter.com/Jyel" target="_blank">@Jyel</a>
+</body>
+</html>

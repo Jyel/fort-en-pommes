@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url(media/img/back.png) no-repeat center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button:focus {
+    outline:none;
+}
+
+.credits {
+	position: absolute;
+	margin-top: 10px;
+	padding-left: 100%;
+	margin-left: -60px;
+	color: white;
+	opacity: 0.1;
+	font-family: Helvetica;
+	text-decoration: none;
+}
+
+.button:active {
+	width: 248px;
+	margin-left: 1px;
+	margin-right: 101px;
+	height: 248px;
+	margin-bottom: 1px;
+}
+
+.button {
+	position: relative;
+	height: 250px;
+	width: 250px;
+	margin-right: 100px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	border: none;
+	border-radius: 50px;
+}
+
+#sven {
+	background: url(media/img/sven.png) center;
+}
+
+#burgonde {
+	background: url(media/img/burgonde.png) center;
+}
+
+.container {
+	position: fixed;
+	margin-left: -300px;
+	padding-left: 50%;
+	margin-top: -125px;
+	padding-top: 25%;
+}
